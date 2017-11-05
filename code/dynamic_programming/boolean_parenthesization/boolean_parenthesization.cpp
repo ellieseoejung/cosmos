@@ -1,5 +1,9 @@
+// dynamic programming | boolean parenthesization | C++
+// Part of Cosmos by OpenGenus Foundation
+
 #include <iostream>
-#include<cstring>
+#include <cstring>
+
 using namespace std;
 
 // Dynamic programming implementation of the boolean

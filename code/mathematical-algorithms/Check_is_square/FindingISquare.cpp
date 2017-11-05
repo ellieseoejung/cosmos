@@ -1,25 +1,30 @@
+// Part of Cosmos by OpenGenus Foundation 
 #include <iostream>
+#include <cmath>
 using namespace std;
+
+// Function to check squares
+bool isSquare ( int n ){
+
+	//remove digits after decimal
+	int truncRoot = static_cast<int>(sqrt(n));
+	
+	return (n >= 0) && (( truncRoot * truncRoot ) == n );
+}
+
+
 int main()
 {
 	int t;
-	cout<<"Enter no. of test cases"<<endl;
+	cout<<"Enter the no. of test cases"<<endl;
 	cin>>t;
 	while(t--)
 	{
 		int n;
-		cout<<"Enter the number"<<endl;
+		cout<<"Enter the number: "<<endl;
 		cin>>n;
-		int i;
-		for(i=1;i<=n;i++)
-		{
-			if(i*i==n)
-			{
-				cout<<"Yes";
-				return 0;
-			}
-		}
-	  	cout<<"No";
-		return 0;
+
+		cout << ( isSquare (n) ? "YES" : "NO" ) << endl;
+
 	}
 }

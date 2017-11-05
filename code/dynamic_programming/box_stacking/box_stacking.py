@@ -1,7 +1,7 @@
 '''
-Part of Cosmos by Open Genus Foundation
+dynamic programming | box stacking | Python
+Part of Cosmos by OpenGenus Foundation
 '''
-
 
 from collections import namedtuple
 from itertools import permutations
@@ -65,7 +65,3 @@ if __name__ == '__main__':
     d2 = dimension(1, 2, 4)
 
     assert 11 == box_stack_max_height([d1, d2])
-
-
-
-

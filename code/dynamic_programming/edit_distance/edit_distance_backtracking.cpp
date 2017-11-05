@@ -1,4 +1,9 @@
-#include <bits/stdc++.h>
+// dynamic programming | edit distance | C++
+// Part of Cosmos by OpenGenus Foundation
+
+#include <iostream>
+#include <algorithm>
+
 using namespace std;
 
 

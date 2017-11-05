@@ -1,9 +1,11 @@
 /*
-Part of cosmos by OpenGenus organisation
+Part of Cosmos by OpenGenus Foundation
 finding longest common substring between two strings by dynamic programming
 */
 
-#include <bits/stdc++.h>
+#include <string>
+#include <iostream>
+#include <cstring>
 using namespace std;
 
 int longestCommonSubString(string s1, string s2) {

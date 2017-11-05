@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cstring>
 using namespace std;
 
 int BIT[101000], A[101000],n;
@@ -10,7 +11,7 @@ int query(int i){
 	}
 	return ans;
 }
-int update(int i){
+void update(int i){
 	for(;i <=n;i += i&(-i)){
 		BIT[i]++;
 	}
